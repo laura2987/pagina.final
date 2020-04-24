@@ -1,0 +1,52 @@
+<?php
+if (!isset($_SESSION)) session_start();
+// unset($_SESSION["carrito"]);
+$id=$_POST["id"];
+$d= $_POST["descripcion"];
+$c= $_POST["cant"];
+$p= $_POST["precio"];
+$cat= $_POST["categoria"];
+$_SESSION["carrito"][$id]=$d . "|" . $c. "|". $p . "|". $c*$p;
+
+ ?>
+ <link rel="stylesheet" href="css/layout1.css">
+
+
+   <center><h1>FLEUR Carrito</h1>
+   <div class="tbl-header">
+     <table cellpadding="0" cellspacing="0" border="0">
+       <thead>
+         <tr>
+           <th>cantidad</th>
+           <th>clave</th>
+           <th>Producto</th>
+           <th>precio</th>
+           <th>importe</th>
+         </tr>
+       </thead>
+     <tbody>
+       <?php
+       $suma=0;
+       foreach ($_SESSION ['carrito']as $k => $value) {
+      $valores=explode('|', $_SESSION['carrito'][$k]);
+      $suma=$suma + $valores[3];
+        ?>
+        <tr>
+          <td><?php echo $valores[1]; ?></td>
+          <td><?php echo $k ?></td>
+          <td><?php echo $valores[0]; ?></td>
+          <td><?php echo $valores[2]; ?></td>
+          <td><?php echo $valores[3]; ?></td>
+
+  </tr>
+        <?php
+      }
+      $_SESSION ['total']=$suma;
+         ?>
+     </tbody>
+      </table>
+      <section>
+        <h1>TOTAL: $ <?php echo $suma ?></h1>    <br>
+           <br>
+           <center><a href="guardacarrito.php">Relizar compra</a>
+      </section>

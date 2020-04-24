@@ -1,0 +1,296 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLEUR</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/layout.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- Start Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">FLEUR</span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Inicio<span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#portfolio-link">Productos</a></li>
+            <li><a href="#about-link">Quienes somos</a></li>
+            <li><a href="#contact-link">Contactanos</a></li>
+            <li class="submenu">
+      </div>
+    </nav>
+
+    <a class="anchor" id="home"></a>
+    <div id="splash" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>FLEUR</h1>
+          <hr/>
+          <p>
+"Todo el mundo tiene derecho a disfrutar de la belleza de la moda"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a class="anchor" id="portfolio-link"></a>
+    <div id="portfolio" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>Prouctos</h1>
+          <hr/>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-hover text-center">
+                    </div>
+                    <img class="img-responsive" src="https://th.bing.com/th/id/OIP.Dhn0EFapjwTsTpIeTARPRQDYEg?w=201&h=268&c=7&o=5&pid=1.7" alt="bruce-lee-tribute-page">
+                  </a>
+
+                  <div class="caption">
+                    <h3><?php echo $rw ['nombre'] ?></h3>
+                    <p class="information"></p>
+          <div class="">
+          	<form class="" action="prueba.php" method="post">
+          	 <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+             <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+          	 <input type="number" name="cant" value="" style="">
+          	 <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+             <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+             <br>
+          	 <input type="submit" name="" value="agregar">
+          	 </form>
+          </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-hover text-center">
+                    </div>
+                    <img class="img-responsive" src="https://th.bing.com/th/id/OIP.V26YvlBfT2Mlz6NDgdJklQHaJ3?w=179&h=239&c=7&o=5&pid=1.7">
+                  </a>
+                  <div class="caption">
+                    <h3><?php echo $rw ['nombre'] ?></h3>
+                    <p class="information"></p>
+        <div class="">
+          <form class="" action="prueba.php" method="post">
+           <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+           <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+           <input type="number" name="cant" value="" style="">
+           <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+           <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+           <br>
+           <input type="submit" name="" value="agregar">
+           </form>
+        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-hover text-center">
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIP.mjZKO8rPsK_A84ztyrwlagHaJ3?w=179&h=239&c=7&o=5&pid=1.7">
+                  </a>
+                  <div class="caption">
+                    <h3><?php echo $rw ['nombre'] ?></h3>
+                    <p class="information"></p>
+        <div class="">
+          <form class="" action="prueba.php" method="post">
+           <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+           <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+           <input type="number" name="cant" value="" style="">
+           <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+           <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+           <br>
+           <input type="submit" name="" value="agregar">
+           </form>
+        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-hover text-center">
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIP.HwpOlinz-W3AYMSwE2FtDwAAAA?w=179&h=239&c=7&o=5&pid=1.7">
+                  </a>
+                  <div class="caption">
+                    <h3><?php echo $rw ['nombre'] ?></h3>
+                    <p class="information"></p>
+              <div class="">
+              	<form class="" action="prueba.php" method="post">
+              	 <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+                 <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+              	 <input type="number" name="cant" value="" style="">
+              	 <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+                 <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+                 <br>
+              	 <input type="submit" name="" value="agregar">
+              	 </form>
+              </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-hover text-center">
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIP.FYWfjyDQzYaDhP3_kLd45QHaJ3?w=179&h=239&c=7&o=5&pid=1.7">
+                  </a>
+                  <div class="caption">
+                    <h3><?php echo $rw ['nombre'] ?></h3>
+                    <p class="information"></p>
+        <div class="">
+          <form class="" action="prueba.php" method="post">
+           <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+           <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+           <input type="number" name="cant" value="" style="">
+           <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+           <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+           <br>
+           <input type="submit" name="" value="agregar">
+           </form>
+        </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="thumbnail-hover text-center">
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIP.NcB70219Dc7cbv7azb5VOwHaJ4?w=179&h=239&c=7&o=5&pid=1.7">
+                  </a>
+                  <div class="caption">
+                    <h3><?php echo $rw ['nombre'] ?></h3>
+                    <p class="information"></p>
+        <div class="">
+          <form class="" action="prueba.php" method="post">
+           <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+           <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+           <input type="number" name="cant" value="" style="">
+           <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+           <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+           <br>
+           <input type="submit" name="" value="agregar">
+           </form>
+        </div>
+        <div class="">
+          <form class="" action="prueba.php" method="post">
+           <input type="hidden" name="id" value="<?php  echo $rw['clave']; ?>">
+           <input type="hidden" name="descripcion" value="<?php  echo $rw['nombre']; ?>">
+           <input type="number" name="cant" value="" style="">
+           <input type="text" name="precio" class="money" value="<?php echo $rw['precio'];?>" readonly>
+           <input type="text" name="categoria" value="<?php  echo $rw['categoria']; ?>" readonly>
+           <br>
+           <input type="submit" name="" value="agregar">
+           </form>
+        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="anchor" id="about-link"></a>
+    <div id="about" class="container-fluid text-center">
+          <h1>Quienes somos</h1>
+          <hr/>
+          <div class="container">
+            <div class="row row-eq-height">
+              <div id="white-bg" class="col-lg-8">
+                <center><p>
+La empresa está principalmente enfocada a la ropa femenina, accesorios, zapatos, bolsos y otros artículos de moda.
+El mercado de FLEUR, abarca Europa, América, Australia y los países de Oriente Medio. La marca fue creada en octubre
+ de 2008, con el lema "todo el mundo tiene derecho a disfrutar de la belleza de la moda". Hasta la fecha, FLEUR llega
+ a más de 220 ciudades en la república mexicana.
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- End About Section -->
+
+    <!-- Start Contact Section -->
+    <a class="anchor" id="contact-link"></a>
+    <div id="contact" class="container-fluid text-center">
+      <h1>Contacto</h1>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Redes Sociales</h2>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+          </div>
+          <div class="col-lg-4">
+            <h2></h2>
+            <address>
+              Tuxtla Gutierrez, Chiapas
+            </address>
+            <div class="embed-responsive embed-responsive-4by3">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122259.61637208838!2d-93.1996108279813!3d16.746150126877996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd85611d06e8f%3A0xdd78bd7b4662216a!2sTuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1ses-419!2smx!4v1583967503986!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2>Contactanos</h2>
+            <a href="https://outlook.live.com/">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".navbar-nav li").click(function(){
+          $(".navbar-nav li").removeClass("active");
+          $(this).addClass("active");
+        }
+        );
+
+        $('.navbar-nav a').click(function(event){
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+        });
+
+      }
+      );
+    </script>
+  </body>
+</html>
